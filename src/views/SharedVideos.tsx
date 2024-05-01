@@ -22,7 +22,7 @@ function SharedVideos({videos}: Props) {
               <div>
                 <a href={v.url} target='_blank'><b>{v.title} {v.createdAt}</b></a>
                 <br/>Shared By: {v.shareBy.email}
-                <br/>{v.description}
+                <br/><pre>{v.description}</pre>
               </div>
             </li>
           );
